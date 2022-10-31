@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><artifacts>
+    <artifact name="GOSOthers2WsInDigi" groupId="com.sanoma.proxy-service" version="1.0.0" type="synapse/proxy-service" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/proxy-services/GOSOthers2WsInDigi.xml</file>
+    </artifact>
+    <artifact name="JSONOthers2Ws_FaultSequence" groupId="com.sanoma.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/JSONOthers2Ws_FaultSequence.xml</file>
+    </artifact>
+    <artifact name="JSONConvertAndSendOtherWsToSap" groupId="com.sanoma.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/JSONConvertAndSendOtherWsToSap.xml</file>
+    </artifact>
+</artifacts>

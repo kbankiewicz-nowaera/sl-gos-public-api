@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><artifacts>
+    <artifact name="JSONConvertOthers2WsToSapCDM_v01_xslt" groupId="com.sanoma.resource" version="1.0.0" type="registry/resource" serverRole="EnterpriseIntegrator">
+        <item>
+            <file>JSONConvertOthers2WsToSapCDM_v01.xslt</file>
+            <path>/_system/governance/custom</path>
+            <mediaType>application/xslt+xml</mediaType>
+            <properties/>
+        </item>
+    </artifact>
+</artifacts>
