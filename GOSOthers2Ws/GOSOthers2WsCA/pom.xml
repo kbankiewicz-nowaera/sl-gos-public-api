@@ -5,17 +5,68 @@
   <parent>
     <groupId>com.example</groupId>
     <artifactId>GOSOthers2Ws</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.0.0</version>
   </parent>
   <groupId>com.sanoma</groupId>
   <artifactId>GOSOthers2WsCA</artifactId>
-  <version>1.0.0-SNAPSHOT</version>
+  <version>1.0.0</version>
   <packaging>carbon/application</packaging>
   <name>GOSOthers2WsCA</name>
   <description>GOSOthers2WsCA</description>
   <properties>
+    <com.sanoma.api_._GOSOthers2WS>capp/EnterpriseServiceBus</com.sanoma.api_._GOSOthers2WS>
+    <com.sanoma.resource_._JSONConvertOthers2WsToSapCDM_v01_xslt>capp/EnterpriseIntegrator</com.sanoma.resource_._JSONConvertOthers2WsToSapCDM_v01_xslt>
+    <com.sanoma.metadata_._GOSOthers2WS_swagger>capp/EnterpriseServiceBus</com.sanoma.metadata_._GOSOthers2WS_swagger>
+    <com.sanoma.sequence_._JSONConvertAndSendOtherWsToSap>capp/EnterpriseServiceBus</com.sanoma.sequence_._JSONConvertAndSendOtherWsToSap>
+    <com.sanoma.proxy-service_._GOSOthers2WsInDigi>capp/EnterpriseServiceBus</com.sanoma.proxy-service_._GOSOthers2WsInDigi>
+    <com.sanoma.metadata_._GOSOthers2WS_metadata>capp/EnterpriseServiceBus</com.sanoma.metadata_._GOSOthers2WS_metadata>
+    <com.sanoma.sequence_._JSONOthers2Ws_FaultSequence>capp/EnterpriseServiceBus</com.sanoma.sequence_._JSONOthers2Ws_FaultSequence>
     <artifact.types>jaggery/app=zip,synapse/priority-executor=xml,synapse/inbound-endpoint=xml,service/rule=aar,synapse/message-store=xml,event/stream=json,service/meta=xml,datasource/datasource=xml,synapse/proxy-service=xml,bpel/workflow=zip,synapse/sequence=xml,synapse/endpointTemplate=xml,carbon/application=car,wso2/gadget=dar,synapse/api=xml,synapse/event-source=xml,synapse/message-processors=xml,event/receiver=xml,lib/dataservice/validator=jar,synapse/template=xml,synapse/endpoint=xml,lib/carbon/ui=jar,lib/synapse/mediator=jar,synapse/metadata=yaml,event/publisher=xml,synapse/local-entry=xml,synapse/task=xml,webapp/jaxws=war,registry/resource=zip,synapse/configuration=xml,service/axis2=aar,synapse/lib=zip,synapse/sequenceTemplate=xml,event/execution-plan=siddhiql,service/dataservice=dbs,web/application=war,lib/library/bundle=jar</artifact.types>
   </properties>
+  <dependencies>
+    <dependency>
+      <groupId>com.sanoma.resource</groupId>
+      <artifactId>JSONConvertOthers2WsToSapCDM_v01_xslt</artifactId>
+      <version>1.0.0</version>
+      <type>zip</type>
+    </dependency>
+    <dependency>
+      <groupId>com.sanoma.metadata</groupId>
+      <artifactId>GOSOthers2WS_metadata</artifactId>
+      <version>1.0.0</version>
+      <type>yaml</type>
+    </dependency>
+    <dependency>
+      <groupId>com.sanoma.metadata</groupId>
+      <artifactId>GOSOthers2WS_swagger</artifactId>
+      <version>1.0.0</version>
+      <type>yaml</type>
+    </dependency>
+    <dependency>
+      <groupId>com.sanoma.api</groupId>
+      <artifactId>GOSOthers2WS</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>com.sanoma.proxy-service</groupId>
+      <artifactId>GOSOthers2WsInDigi</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>com.sanoma.sequence</groupId>
+      <artifactId>JSONConvertAndSendOtherWsToSap</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>com.sanoma.sequence</groupId>
+      <artifactId>JSONOthers2Ws_FaultSequence</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+    </dependency>
+  </dependencies>
   <repositories>
     <repository>
       <releases>

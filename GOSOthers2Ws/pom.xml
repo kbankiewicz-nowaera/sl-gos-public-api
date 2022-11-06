@@ -4,10 +4,15 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.example</groupId>
   <artifactId>GOSOthers2Ws</artifactId>
-  <version>1.0.0-SNAPSHOT</version>
+  <version>1.0.0</version>
   <packaging>pom</packaging>
   <name>GOSOthers2Ws</name>
   <description>GOSOthers2Ws</description>
+  <modules>
+    <module>GOSOthers2WsREG</module>
+    <module>GOSOthers2WsESB</module>
+    <module>GOSOthers2WsCA</module>
+  </modules>
   <scm>
     <connection>scm:git:https://github.com/username/repository.git</connection>
     <developerConnection>scm:git:https://github.com/username/repository.git</developerConnection>

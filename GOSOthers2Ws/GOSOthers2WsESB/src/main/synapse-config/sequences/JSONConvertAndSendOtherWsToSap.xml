@@ -1,2 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<sequence name="JSONConvertAndSendOtherWsToSap" onError="JSONOthers2Ws_FaultSequence" trace="disable" xmlns="http://ws.apache.org/ns/synapse"/>
+<sequence name="JSONConvertAndSendOtherWsToSap" onError="JSONOthers2Ws_FaultSequence" trace="disable" xmlns="http://ws.apache.org/ns/synapse">
+    <property name="messageType" scope="axis2" type="STRING" value="application/xml"/>
+    <property name="contentType" scope="axis2" type="STRING" value="application/xml"/>
+    <log level="full">
+        <property name="message" value="Recieving input xml"/>
+    </log>
+    <xslt key="gov:custom/JSONConvertOthers2WsToSapCDM_v01"/>
+    <log level="full">
+        <property name="message" value="After transformation"/>
+    </log>
+</sequence>

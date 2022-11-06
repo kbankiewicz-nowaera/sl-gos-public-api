@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <proxy name="GOSOthers2WsInDigi" startOnLoad="true" transports="http https" xmlns="http://ws.apache.org/ns/synapse">
     <target>
-        <inSequence/>
+        <inSequence>
+            <script function="transform" key="conf:/repository/EI/transform.js" language="js"/>
+            <property name="messageType" scope="axis2" type="STRING" value="application/xml"/>
+            <property name="contentType" scope="axis2" type="STRING" value="application/xml"/>
+            <log level="full">
+                <property name="message" value="After transformation"/>
+            </log>
+            <sequence key="JSONConvertAndSendOtherWsToSap"/>
+        </inSequence>
         <outSequence/>
         <faultSequence/>
     </target>

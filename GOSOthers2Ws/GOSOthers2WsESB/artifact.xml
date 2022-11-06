@@ -8,4 +8,13 @@
     <artifact name="JSONConvertAndSendOtherWsToSap" groupId="com.sanoma.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
         <file>src/main/synapse-config/sequences/JSONConvertAndSendOtherWsToSap.xml</file>
     </artifact>
+    <artifact name="GOSOthers2WS" groupId="com.sanoma.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/GOSOthers2WS.xml</file>
+    </artifact>
+    <artifact name="GOSOthers2WS_swagger" groupId="com.sanoma.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/GOSOthers2WS_swagger.yaml</file>
+    </artifact>
+    <artifact name="GOSOthers2WS_metadata" groupId="com.sanoma.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/GOSOthers2WS_metadata.yaml</file>
+    </artifact>
 </artifacts>

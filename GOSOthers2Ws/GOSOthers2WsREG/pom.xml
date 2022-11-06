@@ -5,11 +5,11 @@
   <parent>
     <groupId>com.sanoma</groupId>
     <artifactId>GOSOthers2Ws</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.0.0</version>
   </parent>
   <groupId>com.sanoma</groupId>
   <artifactId>GOSOthers2WsREG</artifactId>
-  <version>1.0.0-SNAPSHOT</version>
+  <version>1.0.0</version>
   <packaging>pom</packaging>
   <name>GOSOthers2WsREG</name>
   <description>GOSOthers2WsREG</description>
